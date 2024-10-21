@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pesquisar Produto</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Buscar Produto</h1>
+        <input type="text" id="search-input" placeholder="Digite o título do produto" class="form-control">
+        <button class="btn btn-primary" onclick="searchProduct()">Buscar</button>
+        <table class="table mt-3" id="search-results">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Preço</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="search-table">
+                <!-- Resultados da pesquisa serão inseridos aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

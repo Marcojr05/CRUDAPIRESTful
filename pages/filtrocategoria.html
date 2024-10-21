@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Filtrar por Categoria</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Filtrar Produtos por Categoria</h1>
+        <select id="category-select" class="form-control" onchange="filterByCategory()">
+            <option value="">Selecione uma categoria</option>
+            <!-- Categorias serão inseridas aqui -->
+        </select>
+        <table class="table mt-3">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Preço</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="category-table">
+                <!-- Produtos filtrados serão inseridos aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
